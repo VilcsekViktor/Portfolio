@@ -1,0 +1,219 @@
+@import "basic.scss";
+
+@keyframes move {
+    0% {transform: translateX(0px);}
+    50% {
+        transform: translateY(60px);
+        }
+    100% {transform: translateX(0px);}
+}
+
+
+// Landing section ---------------------------------------
+.landing-container {
+    background-color: $main-color;
+    background-image: url("./../img/landing-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.name {
+        width: 24vw;
+        margin-bottom: 0.5em;
+}
+
+.profession {
+    color: $cta-color-vibrant;
+    font-size: 3vw;
+}
+
+.profession-small {
+    display: none;
+}
+
+// About me section ---------------------------------------
+.about-container {
+    background: $side-color;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: $main-color;
+        margin-bottom: 24px;
+    }
+}
+
+.intro-text {
+    color: $main-color;
+    text-align: center;
+    width: 800px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, $cta-color-bright, $cta-color-dark);
+    padding: 14px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 500ms;
+    -moz-box-shadow: 0px 0px 12px rgba($cta-color-bright,0.8);
+    -webkit-box-shadow: 0px 0px 12px rgba($cta-color-bright, .8);
+    box-shadow: 0px 0px 12px rgba($cta-color-bright, .8);
+    p {
+        text-decoration: none;
+        color: $side-color;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+.button:hover {
+    transition: 500ms;
+    transform: translateY(-6px);
+    -moz-box-shadow: 0px 3px 20px rgba($cta-color-dark,0.8);
+    -webkit-box-shadow: 0px 3px 20px rgba($cta-color-dark, .8);
+    box-shadow: 0px 3px 20px rgba($cta-color-dark, .8);
+    p {
+        text-decoration: none;
+    }
+}
+
+// Projects section ---------------------------------------
+#projects {
+    background-color: $main-color;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-title {
+    color: $side-color;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.projects-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 600px);
+    grid-gap: 50px;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.project-pic {
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    -moz-box-shadow: 3px 3px 14px rgba($main-color,0.6);
+    -webkit-box-shadow: 3px 3px 14px rgba($main-color, .6);
+    box-shadow: 3px 3px 14px rgba($main-color, .6);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    width: 80%;
+    color: $side-color;
+    font-size: 18px;
+    text-align: center;
+}
+
+.project-button {
+    width: 300px;
+}
+
+// Contact section ---------------------------------------
+#contact {
+    background-color: $side-color;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 24px;
+    }
+}
+
+.social-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: auto;
+    margin-right: 15px;
+    transition: 500ms;
+}
+
+.social-icon:hover {
+    transition: 500ms;
+    transform: translateY(-5px);
+    -moz-box-shadow: 0px 3px 12px rgba($main-color,0.4);
+    -webkit-box-shadow: 0px 3px 12px rgba($main-color, .4);
+    box-shadow: 0px 3px 12px rgba($main-color, .4);
+}
+
+.no-right-margin {
+    margin: 0;
+}
+
+// Projects section ---------------------------------------
+#footer {
+    background-color: $main-color;
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: $side-color;
+    line-height: 1.2;
+}
+
+
