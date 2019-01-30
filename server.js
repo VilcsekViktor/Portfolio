@@ -1,21 +1,18 @@
-const fs = require('fs')
 const http = require('http')
-const https = require('https')
 const express = require('express')
 const app = express()
 
-
+// server static assets from /public
 app.use(express.static('public'))
 
+// when user navigates to / => serve index.html
 app.get('/', (req, res) => res.sendfile('public/index.html'))
 
+// create server
 const httpServer = http.createServer(app);
 
-
-httpServer.listen(80, () => {
-	console.log('HTTP Server running on port 80');
-});
-
-httpsServer.listen(443, () => {
-        console.log('HTTPS Server running on port 443');
+// listen on port 80s
+const port = 80;
+httpServer.listen(port, () => {
+    console.log(`HTTP Server running on port ${port}`);
 });
