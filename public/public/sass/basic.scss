@@ -1,0 +1,50 @@
+$main-font : 'Raleway', sans-serif;
+$main-color : #2F2F40;
+$side-color : #F7F4F3;
+$cta-color-bright : #6CCFF6;
+$cta-color-dark : #1FB1EB;
+$cta-color-vibrant : #00FDDC;
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: $main-font;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+p{
+  line-height: 1.5;
+}
